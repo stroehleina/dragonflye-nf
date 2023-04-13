@@ -35,7 +35,6 @@ process bakta {
         --tmp-dir ./tmp \
         --debug \
         --db ${params.bakta_db} \
-        --compliant \
         --keep-contig-headers \
         --locus-tag ${sample_id} \
         --prefix "${sample_id}" \
