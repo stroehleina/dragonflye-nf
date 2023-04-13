@@ -22,7 +22,7 @@ process prokka {
       printf -- "        - parameter: --compliant\\n"                                >> ${sample_id}_${assembler}_${assembly_mode}_prokka_provenance.yml
       printf -- "          value: null\\n"                                           >> ${sample_id}_${assembler}_${assembly_mode}_prokka_provenance.yml
 
-      prokka --cpus ${task.cpus} --compliant --locustag ${sample_id} --centre "BCCDC-PHL" --prefix "${sample_id}" ${assembly}
+      prokka --cpus ${task.cpus} --compliant --locustag ${sample_id} --centre "MDU-PHL" --prefix "${sample_id}" ${assembly}
 
       cp ${sample_id}/${sample_id}.gbk ${sample_id}_${assembler}_${assembly_mode}_prokka.gbk
       cp ${sample_id}/${sample_id}.gff ${sample_id}_${assembler}_${assembly_mode}_prokka.gff
